@@ -18,6 +18,7 @@ nl:      .asciiz "\n"
 .text
 .globl main
 main:
+    # Part A: usage between two readings
     li   $v0, 4
     la   $a0, prompt1
     syscall
@@ -44,6 +45,7 @@ main:
     la   $a0, newline
     syscall
 
+    # Part B: three-month summary
     li   $v0, 4
     la   $a0, prompt
     syscall
